@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 135%;
+}
+
+a {
+    color: #ce5050;
+    text-decoration: none;
+    position: static;
+    top: 50%;
+    margin-top: -0.625em;
+}
+
+a:hover {
+    color: rgb(80, 124, 206);
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+}
+
+a:active {
+    color: #b4f38a;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: AUTO \9;
+}
+
+hr {
+    display: block;
+    border: 0px;
+    border-top: 1px solid #cccccc;
+    height: 1px;
+    padding: 0;
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+/* Блок Выделения*/
+
+::selection {
+    background: #b4f38a;
+    color: #4d4d4d;
+}
+
+::-moz-selection {
+    background: #b4f38a;
+    color: #4d4d4d;
+}
+
+
+/* СТРУКТУРА САЙТА*/
+
+
+header {
+    width: 100%;
+    background: #ffffff;
+    height: 50px;
+    position: relative;
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+#vs_logo {
+    display: flex;
+    flex-direction: row
+}
+
+
+#img_logo {
+    position: absolute;
+    top: 14px;
+    left: 30px
+
+
+}
+
+#logoo {
+    position: absolute;
+    top: 23px;
+    left: 110px;
+
+}
+
+#logo {
+    color: #58b855;
+    font-size: 3.7em;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+#Logo_head {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 75%;
+}
+
+#contact {
+    width: 73px;
+    margin-top: 13px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.7em;
+    margin-left: 20px;
+}
+
+.buy {
+    margin-top: 13px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.7em;
+    margin-left: 20px;
+}
+
+
+input[type=text].field:focus {
+    border: 2px solid rgb(206, 80, 80);
+}
+
+/*Центер сайта*/
+
+
+.menu {
+    color: #666;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.7em;
+}
+
+.menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+menu#hrefs a {
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #696969;
+}
+
+menu#hrefs a:hover {
+    background: #ececec
+}
+
+.decor {
+    background-color: #58b855;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Стили для страницы о нас*/
+
+#onas {
+    color: #ce5050;
+    font-family: 'comic Sans ms', sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    border: 10px;
+}
+
+#linonas {
+    width: 150px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #5c5c5c;
+}
+
+
+#about_us {
+    width: 100%;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#about_us p {
+    margin-top: 10px;
+}
+
+.about_img {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.about_img img {
+    margin: 1%;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+
+/*Стили для как нас найти*/
+
+.cros_map {
+    width: 1300px;
+
+}
+
+.cros {
+    width: 240px;
+    height: 500px;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#cros_articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+#cros_hr {
+    width: 300px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #5c5c5c;
+}
+
+#cros p {
+    border-top: 3%;
+    font-size: 0.85em;
+    width: 240px;
+}
+
+.cros_br {
+    margin-top: 20px;
+}
+
+.cros_strong {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#logo_contact {
+    color: #8b5a5a;
+    font-family: 'comic Sans ms', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 10px;
+
+}
+
+#cros_contact_hr {
+    width: 130px;
+    max-width: 80%;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: #5c5c5c;
+}
+
+#cros_contact {
+    width: 240px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 0.85em;
+    width: 240px;
+}
+
+td {
+    padding: 1px;
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+/*Стили для блога*/
+
+#blog_wrep {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin-top: 10px;
+}
+
+#blog_wrep #blog_artcl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 94%;
+    max-width: 70%;
+}
+
+
+#blog_wrep #blog_artcl article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 2%;
+    height: 298px;
+    width: 590px;
+    border: 1PX solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin: 14.5px;
+}
+
+
+#blog_wrep #blog_artcl article:hover {
+    background: #7bb879;
+    color: #ffffff;
+    border: 1px solid #7bb879;
+    transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+}
+
+
+#blog_wrep #blog_artcl article img {
+    position: absolute;
+    left: 0;
+    height: 298px;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+}
+
+.h3_blog {
+
+    position: absolute;
+    top: 15px;
+    max-width: 100%;
+    font-size: 1.3em;
+    color: #1f1f1f;
+}
+
+.h3_blog a {
+
+margin-left: 1.3em;
+    color: #ce5050
+}
+
+#right_blog_article {
+
+    margin-top: 10px;
+    padding: 15px;
+}
+
+
+.span_blog {
+    margin-left: 40px;
+    width: 230px;
+    position: absolute;
+    top: 70px;
+    font-weight: 300;
+    font-size: 0.77em;
+    color: #444444;
+}
+
+.data_blog {
+    position: absolute;
+    top: 91%;
+    left: 88%;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.80em;
+    color: #5c5c5c
+}
+
+/*Страница блога*/
+
+#blog_wrepper {
+
+    width: 100%;
+    margin-top: 10px;
+}
+
+#blog_wrepper #blog_articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+#blog_wrepper #blog_articles article {
+    margin-top: 2%;
+
+    width: 90%;
+    box-sizing: border-box;
+    min-height: 400px;
+    height: 100%;
+    background-color: #fafafa;
+    margin-left: 14px;
+    margin-left: 14px;
+}
+
+#blog_wrepper #blog_articles article img {
+    border-radius: 20px 20px 0 0;
+}
+
+.blog_div_art {
+    margin-left: 60px;
+    display: block;
+    width: 90%;
+}
+
+.blog_div_art h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#blog_wrepper #blog_articles article p {
+    font-size: 1em;
+}
+
+/*Стили для статей*/
+
+#art {
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#art img {
+    border: 1px solid silver;
+    width: 300px;
+    height: 250px;
+}
+
+#art h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin: 10px 0px 20px 0px;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+#art p {
+    margin: 10px 0px 20px 0px;
+    font-size: 14px;
+    line-height: 1.54em;
+    width: 500px;
+}
+
+#art div {
+    width: 500px;
+}
+
+#hr-title {
+    border-top: 1px solid silver;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 40px 00px 40px;
+}
+
+#hr-title #hr-title-div {
+    border-top: 1px solid silver;
+}
+
+#hr-title-div {
+
+    width: 100%;
+    margin-top: 10px;
+}
+
+#hr-title-div #hr-article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+#hr-title-div #hr-article article {
+    margin-top: 2%;
+
+    width: 300px;
+    border: 1PX solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-left: 14px;
+    margin-left: 14px;
+    height: 300px;
+}
+
+#hr-title-div #hr-article article:hover {
+
+    background: #7bb879;
+    color: #ffffff;
+    border: 1px solid #7bb879;
+    transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+}
+
+#hr-title-div #hr-article article img {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#hr-title-div #hr-article article h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #1f1f1f;
+}
+
+#hr-title-div #hr-article article div {
+    margin-top: 3%;
+}
+
+
+#hr-title-div #hr-article article span {
+    width: 100%;
+    margin: 5px 5% 5% 5%;
+    font-weight: 300;
+    font-size: 0.74em;
+    color: #5c5c5c;
+}
+
+#text_mnogo p {
+    font-size: 0.8em;
+}
+
+/*Основные стили для сайта*/
+
+#wrepper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#wrepper #articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+#wrepper #articles article {
+    margin-top: 2%;
+
+    width: 300px;
+    border: 1PX solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-left: 14px;
+    margin-left: 14px;
+    height: 300px;
+}
+
+#wrepper #articles article:hover {
+    background: #7bb879;
+    color: #ffffff;
+    border: 1px solid #7bb879;
+    transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+}
+
+
+#wrepper #articles article img {
+    width: 100%;
+    height: 210px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrepper #articles article h3 {
+    width: 90%;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #1f1f1f;
+}
+
+#wrepper #articles article div {
+    margin-top: 3%;
+}
+
+
+#wrepper #articles article span {
+    width: 80%;
+    margin: 30px 5% 5% 5%;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #5c5c5c;
+}
+
+/*Стили для футера*/
+
+footer {
+    background: #ffffff;
+    flex-grow: 1;
+    height: 100px;
+    width: 100%;
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin-top: 100px;
+    font-family: 'Roboto Slad', serif;
+}
+
+footer img {
+    width: 7%;
+    margin-right: 10px;
+}
+
+#page-wrap:after {
+    content: "";
+    display: block;
+}
+
+footer #page-wrap ::after {
+    height: 10px;
+}
+
+#page-wrap {
+    flex-grow: initial;
+}
+
+.site2 {
+    margin-left: 3%;
+    font-size: 1.2em;
+}
+
+#social_log {
+    margin-right: 40px;
+}
+
+#logo_soc {
+    position: relative;
+    bottom: 17px;
+    font-size: 1.5em;
+    display: block;
+    margin-right: 9.3%;
+    text-align: right;
+}
+
+#social {
+    position: relative;
+    left: 54%;
+    bottom: 17px;
+    width: 40%;
+    margin: 25px 5.9% 15px 0;
+
+}
+
+#social a {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #b4f38a;
+    margin-left: 2%;
+    width: 40px;
+    height: 40px;
+    float: right;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+    position: relative;
+}
+
+#social a:hover {
+    background: #e9e9e9;
+    color: #333
+}
+
+
+#social a i {
+    margin-top: 30%;
+}

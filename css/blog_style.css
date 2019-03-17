@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+}
+.wrap {
+  
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.wrap1
+{
+  
+  display: flex;
+  justify-content: center;
+  margin-left: 2%
+}
+
+.card {
+  font-size: 0.95em;
+  width: 144px;
+  height: 144px;
+  position: relative;
+  perspective: 1000px;
+}
+.front, .back 
+{
+  border: 1px solid silver;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+.front {
+  background-color: #fff;
+}
+.front img{
+  border-radius: 5px;
+}
+
+.back {
+  
+  background-color: #7bb879;
+  transform: rotateY(180deg);
+}
+
+.back_a
+{
+  width: 144px;
+  height: 144px;
+  
+  
+   border-radius: 5px;
+}
+
+.back_menu_blog
+{
+  margin-top: 60px;
+  font-size: 0.85em;
+  color: rgb(59, 59, 59);
+}
+
+.back_menu_blog div
+{
+  margin-top: 10px;
+}
+
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+
+#center_menu
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#hr_menu_blog
+{
+  width: 800px;
+  margin-top: 15px;
+}
